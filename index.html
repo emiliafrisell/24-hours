@@ -5,34 +5,158 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="icon" href="images/favicon.png">
+
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet" />
 
 
-    <link href="./CSS/style.css" type="text/css" rel="stylesheet" />
+    <link href="CSS/style.css" type="text/css" rel="stylesheet" />
+    <link href="CSS/media-queries.css" type="text/css" rel="stylesheet" />
+    <link href="CSS/rotating.css" type="text/css" rel="stylesheet" />
 
-    <title>Home | 24-hours</title>
+    <title>On Bikes With Tikes</title>
 </head>
 
 <body>
+    <div id="loading-wheel" >
+        <div class="background"></div>
+        <img src="images/bike-wheel.png" alt="bike wheel" class="rotating" />
+    </div>
+    
+    <header class="">
+        <img id="logo" src="images/logo.png"  alt="On Bikes With Tikes (logo = text and an orange bike wheel) "/>
 
-    <header>
-        <h1>TITLE</h1>
-        <nav>
-            <ul>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
+        <nav class="navbar">
+            <i class="menu fas fa-bars"></i>
+            <ul class="hidden drop-down">
+              <a href="index.html"><li>Home</li></a>
+              <a href="#facts"><li>Facts</li></a>
+              <a href="#about"><li>About</li></a>
+              <a href="#contact"><li>Contact</li></a>
             </ul>
-        </nav>
+          </nav>
     </header>
 
-    <main class="">
-        CONTENT
+    <main class="dummy">
+
+        <h1>Cycling Towards a Greener Tomorrow</h1>
+
+        <section class="intro">
+            <p>Raising awareness of the benefits of cycling on both personal health and society, 
+                to inspire parents to make the choice to make the bike their main means of transportation</p>
+            <img id="snapshot" src="images/bike-snapshot.png" />
+        </section>
+        
+        <a href="#contact"><button>Find Out More <i class="fas fa-chevron-right"></i></button></a>
+        
     </main>
 
-    <footer>
-        FOTTER
+    <section id="facts">
+        <a name="facts"></a>
+        <img class="facts-img" src="images/facts.jpg" alt="Facts: “Transport accounts for nearly 25% of global carbon emissions, with 80% of people in cities choosing high-emissions-producing motor vehicles for their private transport trips.” (bicyclenetwork.com.au)
+        “if bikes and ebikes became 22% of all transport trips in all cities worldwide, greenhouse gas emissions and energy use would be 47% reduced by 2050.” (bicyclenetwork.com.au)
+        “When compared to other forms of transport, the amount of energy required to produce a bicycle is tiny. … Variations exist based on bicycle type and other external factors, but even taking this into consideration, bikes have a substantially lower embodied energy.” (Peach, 2018)
+        ">
+
+        <h3 class="facts-title">The Facts</h3>
+        <ul class="facts-text">
+            <li><i class="fas fa-arrow-right"></i> “Transport accounts for nearly 25% of global carbon emissions, 
+                with 80% of people in cities choosing high-emissions-producing motor 
+                vehicles for their private transport trips.” (bicyclenetwork.com.au)</li>
+            <li><i class="fas fa-arrow-right"></i> “if bikes and ebikes became 22% of all transport trips in all cities 
+                worldwide, greenhouse gas emissions and energy use would be 47% 
+                reduced by 2050.” (bicyclenetwork.com.au)</li>
+            <li><i class="fas fa-arrow-right"></i> “When compared to other forms of transport, the amount of energy 
+                required to produce a bicycle is tiny. … Variations exist based 
+                on bicycle type and other external factors, but even taking this 
+                into consideration, bikes have a substantially lower embodied 
+                energy.” (Peach, 2018)</li>
+
+        </ul>
+    </section>
+
+    <section id="about">
+        <a name="about"></a>
+
+        <h3 class="about-title sub-title">The Backstory</h3>
+        <p class="about-text">
+            I've always loved riding my bike. But over the years it's become more 
+            than just a love of cycling - it's become a way of life. Together with 
+            which has come a conviction of the benefit of cycling not only on my 
+            mental and physical health, but also of its benefits for society and 
+            the environment. 
+        </p>
+        <p class="about-text">
+            Now that I’m a parent it’s a way of life that we adopt as a family. 
+            Cycling is second nature to my kids, who for the rest of their lives 
+            will consider it the first option when it comes to local transportation. 
+        </p>
+        <p class="about-text">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo 
+            ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis 
+            dis parturient montes, nascetur ridiculus mus. Donec quam felis, 
+            ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat 
+            massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate 
+            eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, 
+            justo.  
+        </p>
+        <p class="about-text">Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, 
+            enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. 
+            Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. 
+            Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper 
+            ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus 
+            eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing 
+            sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, 
+            hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. 
+            Donec vitae sapien ut libero venenatis faucibus. 
+        </p>
+    </section>
+
+
+    <section id="contact">
+        <a name="contact"></a>
+        <h3 class="contact-title sub-title">Contact</h3>
+
+        <div class="small-fact">
+            <img src="images/tape.png" alt="">
+            <p class="contact-text">“For each person who switches from a private, 
+                polluting mode of transport to a bicycle … a city experiences 
+                reduced carbon emissions and improved air quality.” (Peach, 2018)
+            </p>
+        </div>
+
+     
+
+</section>
+<!--Section: Contact v.2-->
+    </section>
+
+    <footer class="dummy">
+
+        <div class="contact-info">
+            <ul class="">
+                <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                    <p>Stockholm, 12453, SWEDEN</p>
+                </li>
+
+                <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                    <p>+ 46 730 13 42 93</p>
+                </li>
+
+                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                    <p>emilia.frisell@hyperisland.se</p>
+                </li>
+            </ul>
+        </div>
+        <a href="sources.html"> Sources </a>
+
     </footer>
     
     <script src="./JS/app.js" defer></script>

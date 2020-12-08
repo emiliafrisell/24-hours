@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+--orange: #E26D38ff;
+--fiery-rose: #00A08Dff;
+--maximum-yellow: #F1FA47ff;
+--mellow-apricot: #ACC141ff;
+--text-color:  rgb(73, 71, 71);
+}
+
+body {
+    min-height: 89vh;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: sans-serif;
+    color: rgb(73, 71, 71);
+}
+
+header {
+
+    z-index: 999;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+
+    background-color:white;
+
+    width: 100%;
+    height: 85px;
+    padding: 0.6rem;
+    opacity: 0.9;
+}
+
+#logo {
+    /* margin-left: 10%; */
+    height: 50px;
+    border-radius: 5px;
+}
+
+ nav i {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+        z-index: 600;
+        color: var(--mellow-apricot);
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  .fa-times {
+      /* color: black; */
+  }
+  .menu {
+    font-size: 1.2rem;
+  }
+  
+  .drop-down {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 500;
+  
+    list-style: none;
+  
+    height: 100vh;
+    width: 100%;
+    max-width: 400px;
+  
+    font-size: 1rem;
+    background-color: rgba(255,255,255, 0.8);
+
+    padding-top: 4rem;
+    padding: 15px;
+  }
+  
+  .drop-down li:hover {
+    color: var(--mellow-apricot);
+  }
+  
+  .drop-down li {
+      margin-top: 1rem;
+    text-emphasis: 2em;
+    color: black;
+    text-align: left;
+    line-height: 1.5rem;
+  }
+  
+  main {
+    /* min-height: 90vh; */
+    margin-top: 85px;
+    text-align: center;
+
+    /* display: flex;
+    flex-direction: column; */
+    align-content: center;
+    /* justify-content: space-evenly; */
+  }
+
+  h1 {
+    font-size: 2rem;
+    /* padding-top: 2rem; */
+    padding: 2 rem 20px 0px 20px;
+  }
+
+  .intro {
+      display: flex;
+      justify-content: space-evenly;
+
+      margin: 0 auto;
+      margin-top: 60px;
+      width: 70%;
+  }
+
+  p {
+      color: gray;
+      /* margin-top: 20px; */
+      line-height: 1.4;
+      padding: 1rem;
+  }
+ 
+  .intro p {
+      margin-top: 0px;
+      font-size: 1.2rem;
+  }
+
+  #snapshot {
+    display: none;
+    height: 150px;
+  }
+
+  button {
+      height: 55px;
+      width: 250px;
+      border-radius: 7px;
+      font-size: 1.2rem;
+
+      color: white;
+      margin-top: 40px;
+      margin-bottom: 40px;
+
+      background-color: var(--orange);
+      border: none;
+      box-shadow: 2px 2px 4px gray;
+
+      transition: linear 1s;
+
+      cursor: pointer;
+  }
+
+  .fa-chevron-right {
+    position: relative;
+    -webkit-animation: linear infinite;
+    -webkit-animation-name: run;
+    -webkit-animation-duration: 3s;
+}
+
+@-webkit-keyframes run {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 15%;
+    }
+    100% {
+        left: 0;    
+    }
+}
+
+button:hover {
+    background-color: var(--maximum-yellow);
+    transition: linear 1s;
+
+}
+
+#facts {
+    width: 100%;
+    align-content: center;
+    color: gray;
+
+    background-color: var(--orange);
+
+    padding: 20px;
+    
+}
+
+#facts img, .sources img {
+    width: 100%;
+}
+
+#facts h3 {
+    color: black;
+    font-size: 2.4rem;
+    padding-left: 30px;
+    margin-bottom: -13px;
+}
+
+.facts-text {
+    background-color: white;
+
+    width: 95%;
+    margin: auto;
+    padding: 10px 20px;
+
+}
+
+.facts-text li {
+    list-style: none;
+    padding: 10px;
+}
+.fa-arrow-right {
+    color: var(--orange);
+    padding-right: 2px;
+}
+
+
+#about {
+    min-height: 80vh;
+    width: 70%;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    align-content: center;
+}
+
+.sub-title {
+    font-size: 2rem;
+}
+
+.about-title {
+    
+    color: var(--orange);
+}
+
+#contact {
+    height: 90vh;
+    width: 100%;
+    align-content: center;
+
+    color: white;
+    background-color: rgb(73, 71, 71);
+}
+
+.contact-title {
+    
+}
+
+.small-fact {
+    display: none;
+}
+
+.contact-info {
+    padding-top: 1rem;
+    width: 300px;
+    align-content: center;
+    text-align: center;
+    margin: auto;
+}
+  footer {
+      width: 100%;
+      padding: 0.5rem; 
+      background-color: var(--dark-sienna);
+      color: var(--mellow-apricot);
+  }
+
+#loading-wheel img {
+   height: 120px;
+}
+
+.dummy {
+    /* border: 2px solid orange; */
+}
+
+.hidden {
+    display: none;
+}
