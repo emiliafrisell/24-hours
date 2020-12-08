@@ -13,11 +13,12 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet" />
 
-
     <link href="CSS/style.css" type="text/css" rel="stylesheet" />
+    <link href="CSS/form.css" type="text/css" rel="stylesheet" />
+
     <link href="CSS/media-queries.css" type="text/css" rel="stylesheet" />
     <link href="CSS/rotating.css" type="text/css" rel="stylesheet" />
 
@@ -50,7 +51,7 @@
 
         <section class="intro">
             <p>Raising awareness of the benefits of cycling on both personal health and society, 
-                to inspire parents to make the choice to make the bike their main means of transportation</p>
+                to inspire parents to make the choice to make the bike their main means of transportation since 2020</p>
             <img id="snapshot" src="images/bike-snapshot.png" />
         </section>
         
@@ -122,21 +123,32 @@
 
     <section id="contact">
         <a name="contact"></a>
-        <h3 class="contact-title sub-title">Contact</h3>
-
+        <!-- <h3 class="contact-title sub-title">Contact</h3> -->
+<!-- 
         <div class="small-fact">
             <img src="images/tape.png" alt="">
             <p class="contact-text">“For each person who switches from a private, 
                 polluting mode of transport to a bicycle … a city experiences 
                 reduced carbon emissions and improved air quality.” (Peach, 2018)
             </p>
-        </div>
+        </div> -->
 
+        <form action="/" class="decor">
+            <div class="form-left-decoration"></div>
+            <div class="form-right-decoration"></div>
+            <div class="circle"></div>
+            <div class="form-inner">
+              <h1>Contact us</h1>
+              <input type="text" placeholder="Name">
+              <input type="email" placeholder="Email">
+              <textarea placeholder="Message..." rows="5"></textarea>
+              <button type="submit" href="/">Send Message</button>
+            </div>
+          </form>
      
 
 </section>
-<!--Section: Contact v.2-->
-    </section>
+
 
     <footer class="dummy">
 
@@ -155,7 +167,7 @@
                 </li>
             </ul>
         </div>
-        <a href="sources.html"> Sources </a>
+        <a class="source-link" href="sources.html"> Sources </a>
 
     </footer>
     

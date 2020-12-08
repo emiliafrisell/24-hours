@@ -19,6 +19,10 @@ body {
     color: rgb(73, 71, 71);
 }
 
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
 header {
 
     z-index: 999;
@@ -91,7 +95,7 @@ header {
   }
   
   main {
-    /* min-height: 90vh; */
+    min-height: 90vh;
     margin-top: 85px;
     text-align: center;
 
@@ -177,6 +181,10 @@ button:hover {
 
 }
 
+section {
+    scroll-margin-top: 100px;
+}
+
 #facts {
     width: 100%;
     align-content: center;
@@ -217,7 +225,6 @@ button:hover {
     padding-right: 2px;
 }
 
-
 #about {
     min-height: 80vh;
     width: 70%;
@@ -237,16 +244,20 @@ button:hover {
 }
 
 #contact {
-    height: 90vh;
+    max-height: 90vh;
     width: 100%;
     align-content: center;
 
+    padding-top: 40px;
+    padding-bottom: 40px;
     color: white;
-    background-color: rgb(73, 71, 71);
+
+    background-color: #5a7233;
 }
 
 .contact-title {
-    
+    padding: 2rem;
+
 }
 
 .small-fact {
@@ -260,6 +271,11 @@ button:hover {
     text-align: center;
     margin: auto;
 }
+
+.contact-info li {
+    list-style: none;
+}
+
   footer {
       width: 100%;
       padding: 0.5rem; 
@@ -277,4 +293,13 @@ button:hover {
 
 .hidden {
     display: none;
+}
+
+.source-link {
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+    color: var(--text-color);
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
 }
