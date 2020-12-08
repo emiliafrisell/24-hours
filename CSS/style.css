@@ -135,6 +135,11 @@ header {
   #snapshot {
     display: none;
     height: 150px;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  #snapshot:hover {
+    cursor: default; transform: rotate(20deg); transition: all 0.3s ease-in-out 0s; 
   }
 
   button {
@@ -154,6 +159,9 @@ header {
       transition: linear 1s;
 
       cursor: pointer;
+  }
+
+  .intro button:hover {
   }
 
   .fa-chevron-right {
@@ -178,6 +186,10 @@ header {
 button:hover {
     background-color: var(--maximum-yellow);
     transition: linear 1s;
+
+    -ms-transform: scale(1.05); /* IE 9 */
+    -webkit-transform: scale(1.05); /* Safari 3-8 */
+    transform: scale(1.05);
 
 }
 
@@ -276,6 +288,11 @@ section {
     list-style: none;
 }
 
+.contact-info li:hover i{
+    -ms-transform: scale(1.05); /* IE 9 */
+    -webkit-transform: scale(1.05); /* Safari 3-8 */
+    transform: scale(1.05);
+}
   footer {
       width: 100%;
       padding: 0.5rem; 
