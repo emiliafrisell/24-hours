@@ -56,9 +56,7 @@ header {
   a {
     text-decoration: none;
   }
-  .fa-times {
-      /* color: black; */
-  }
+
   .menu {
     font-size: 1.2rem;
   }
@@ -161,8 +159,6 @@ header {
       cursor: pointer;
   }
 
-  .intro button:hover {
-  }
 
   .fa-chevron-right {
     position: relative;
@@ -305,7 +301,7 @@ section {
 }
 
 .dummy {
-    /* border: 2px solid orange; */
+    border: 2px solid orange;
 }
 
 .hidden {

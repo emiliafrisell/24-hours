@@ -72,10 +72,6 @@
     padding-top: 0px;
     /* padding-left: 10%; */
 }
-
-    .small-fact:hover {
-        
-    }
 }
 
 
@@ -131,7 +127,7 @@
     section {
         scroll-margin-top: 120px;
     }
-    
+
     #about {
         scroll-margin-top: 170px;
     }
@@ -181,6 +177,9 @@
         height: 400px;
     }
 
+    #about {
+        min-height: fit-content;
+    }
     
 }
 
